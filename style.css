@@ -1,0 +1,43 @@
+h1 {
+    color: mediumseagreen
+}
+
+p {
+    color: royalblue
+}
+  
+ul {
+    color: teal,
+}
+  
+h2 {
+    color: tomato
+}
+  
+strong {
+    color: yellow
+}
+  
+em {
+    color: seagreen
+}
+  
+li {
+    color: skyblue
+}
+body {
+    background-color: black;
+}
+img {
+    background-color: black;
+    border-radius: 2rem;
+}
+#div1 {
+    color: rgb(34, 184, 34);
+}
+#div2 {
+    color: rgb(53, 148, 53);
+}
+#ul1 {
+    list-style-type: none;
+}

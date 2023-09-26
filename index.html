@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>css.com</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/png" sizes="192x192" href="/favicon-chrome-192x192.png">
+  <link rel="shortcut icon" type="image/png" sizes="512x512" href="/favicon-chrome-512x512.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #div1 {
+      font-size: 48px
+    }
+    #div2 {
+      font-size: 48px;
+    }
+</style>
+</head>
+
+<body>
+ 
+<h1><font size="9">Cascading Style Sheets(CSS)</font></h1>
+
+<p><font size="6">By itself, HTML makes useful websites, but it isn't great for making good-looking websites.Cascading Style Sheets(CSS) is the language used to add style to HTML files.<underline>CSS describes the color, size, layout, backgrounds, fonts, and other design features for websites.</underline>It also allows you to style your web page differently for different environments (like handheld devices, laptops, and desktops) while keeping the HTML content the same.There are different ways to add CSS to a website:
+
+  <ul>
+
+    <li>You can add CSS directly to an HTML file in the head or as an attribute within each HTML element.</li>
+
+    <br>
+
+    <li>You can make a separate CSS file to store the information. This makes your code easier to read and to organize.</li>
+
+  </ul></font></p>
+
+  <h2><font size="8">Making a CSS file</font> <div id="div1" class="fa"></div>
+    <script>
+    function openfolder() {
+      var a;
+      a = document.getElementById("div1");
+      a.innerHTML = "&#xf114;";
+      setTimeout(function () {
+          a.innerHTML = "&#xf115;";
+        }, 1000);
+    }
+    openfolder();
+    setInterval(openfolder, 2000);
+    </script></h2> 
+
+<p><font size="6">To make a new CSS file, use the same editor that you used to make an HTML file (TextEdit or Notepad). You can name a CSS file anything, but many programmers save a website's CSS file as <i>style.css</i>. For simplicity, save your CSS file in the same folder as your HTML file.</font></p>
+
+<h2><font size="8">Creating a CSS Style</font></h2>
+
+<p><font size="6"><strong>Styles</strong> are made by pairing a <strong>Selector</strong> with <strong>Declarations</strong>.</font></p>
+
+<br>
+
+<p><font size="6">A selector assigns the style to a particular element in the HTML file.<u> The selector is the name of the element without the < > brackets.</u> A declaration is the change in appearance. For example, you can make text purple or put borders around images.
+
+  <ul>
+
+    <li>Selector = elements to be styled</li>
+
+    <br>
+
+    <li>Declaration = what the new style should look like</li>
+
+  </ul></font></p>
+
+<p><font size="6">Add curly brackets around the declaration(s). Add an indent for each declaration to keep the code clean. Like HTML, CSS doesn't pay attention to white space. If you deleted all the spaces and indents, the code would run the same.</font></p>
+
+<br>
+
+<h2><font size="8">Linking Your CSS and HTML files</font> <div id="div2" class="fa"></div>
+
+  <script>
+  function brakechain() {
+    var a;
+    a = document.getElementById("div2");
+    a.innerHTML = "&#xf0c1;";
+    setTimeout(function () {
+        a.innerHTML = "&#xf127;";
+      }, 1000);
+  }
+  brakechain();
+  setInterval(brakechain, 2000);
+  </script></h2>
+
+
+
+<p><font size="6">Before the new styles from a CSS file can be applied to a website, the files need to be linked. You can apply the styles in a CSS file to an HTML website by adding an element to the head of the HTML. The link element needs three attributes:</font></p>
+
+<br>
+<ol>
+
+  <li><font size="6">The <em>REL ATTRIBUTE</em> stands for "relationship" and tells what the relationship is to the file you are linking in the < link> element. When the value is "stylesheet," you're telling the browser that you want the referenced file to be used as the CSS style sheety for the website.</font></li>
+
+  <br>
+
+  <li><font size="6">The <em>TYPE ATTRIBUTE</em> says what type of file it is- for example a text/css file.</font></li>
+
+  <br>
+
+  <li><font size="6">The <em>HREF ATTRIBUTE</em> identifies the name and the location of the CSS file. If the CSS file is in the same location as the HTML file, then you just need to add the file name.</font></li>
+</ol>
+
+<br>
+
+<p><font size="6">This is the format to link "style.css" to an HTML file using the link element:</font></p>
+
+<img class="code" src="file:///E:/images/codeimg.jpg">
+
+<p><font size="6">Sometimes programmers store their CSS files in a seperate folder (usually called "css") on their website's server. If you do this, add the folder name and a forward slash to the href value like this:</font></p>
+
+<img src="file:///E:/images/codeimg2.jpg"> 
+
+<p><font size="6">This < link> element, with all its attributes, tells the web browser to find the file "style.css" and apply the styles from that file to this HTML document.</font></p>
+
+<br>
+
+<p><font size="6">After linking a CSS file to an HTML file, any changes made to the CSS will change how the website is displayed when the browser is refreshed.</font></p>
+
+<br>
+
+<h2><font size="8">CSS Color Attributes</font></h2>
+
+<p><font size="6">There are three properties that you can use in a style to change the color of a web page.</font></p>
+
+<ul>
+  <li><font size="6"><strong>Color</strong> changes the color of the text within an element.</font></li>
+  <br>
+  <li><font size="6"><strong>Background</strong> changes the background color of the space that the element takes up. For example, setting the bakcground color of the <img src="file:///E:/images/img2.jpg"> element to gray will change the entire page gray, but turning the background of a <img src="file:///E:/images/p.jpg"> element pink will only turn the background of the paragraph pink. </font></li>
+  <br>
+  <li><font size="6"><strong>Border color</strong> changes the color of the border if an element has a border. If there is no border, this style will do nothing.</font></li>
+</ul>
+<br>
+
+<p><font size="6">There are a few different ways to specify a color using CSS:</font></p>
+<ul1>
+  <li><font size="6"><strong>color names</strong></font></li>
+  <li><font size="6"><strong>HEX</strong></font></li>
+  <li><font size="6"><strong>RGB</strong></font></li>
+</ul1>
+
+<br>
+
+<h2><font size="8">Color Names</font></h2>
+<p><font size="6"><strong>Color Names</strong> is a set of 147 colors that have been given specific names and can be used in CSS.</font></p>
+
+<br>
+
+<p><font size="6">Using named colors is convenient because you don't have to memorize or look up color codes. But it can be limiting because there are ony 147 colors.</font></p>
+
+<div class="example">
+  <p><font size="6"><strong>Example</strong>: you can use the named color "red" as a value for a color property to represent pure red.</font></p>
+</div>
+
+<br>
+
+<p><font size="6">Format color references like this: <em>property: value;</em></font></p>
+
+<img src="file:///E:/images/codecss.jpg">
+
+<br>
+
+<p><font size="6">Examples of color names:</font></p>
+<ul>
+  
+</ul>
+
+</body>
+
+</html>
